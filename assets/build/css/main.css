@@ -2,28 +2,28 @@
 /* Medium */
 @font-face {
   font-family: "Geometria";
-  src: local("Geometria"), url("../fonts/Geometria-Medium.ttf") format("truetype"), url("../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Medium.woff") format("woff");
+  src: local(""), url("../fonts/Geometria-Medium.ttf") format("truetype"), url("../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 /* Bold */
 @font-face {
   font-family: "Geometria";
-  src: local("Geometria"), url("../fonts/Geometria-Bold.ttf") format("truetype"), url("../fonts/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Bold.woff") format("woff");
+  src: local(""), url("../fonts/Geometria-Bold.ttf") format("truetype"), url("../fonts/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 /* ExtraBold */
 @font-face {
   font-family: "Geometria";
-  src: local("Geometria"), url("../fonts/Geometria-ExtraBold.ttf") format("truetype"), url("../fonts/Geometria-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-ExtraBold.woff") format("woff");
+  src: local(""), url("../fonts/Geometria-ExtraBold.ttf") format("truetype"), url("../fonts/Geometria-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 /* Heavy */
 @font-face {
   font-family: "Geometria";
-  src: local("Geometria"), url("../fonts/Geometria-Heavy.ttf") format("truetype"), url("../fonts/Geometria-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Heavy.woff") format("woff");
+  src: local(""), url("../fonts/Geometria-Heavy.ttf") format("truetype"), url("../fonts/Geometria-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Heavy.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
@@ -498,8 +498,8 @@ footer, header, nav, section, main {
   color: #1d1d1b;
   display: block;
   margin-top: 25px;
-  margin-left: 40px;
-  margin-right: 70px;
+  margin-left: 35px;
+  margin-right: 110px;
 }
 @media screen and (max-width: 1028px) {
   .download-list .item {
