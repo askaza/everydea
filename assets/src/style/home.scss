@@ -6,7 +6,7 @@
 
   @include screen-md() {
     background-image: url(../img/tablet/bg-home.png), linear-gradient($green, $green);
-    background-size: 869px auto, 100% 200px;
+    background-size: 869px auto, 100% 177px;
     background-position: center 20px,center bottom;
     background-repeat: no-repeat;
     height: 1200px;
@@ -39,13 +39,13 @@
   }
 
   .main {
-    height: 805px;
+    height: 825px;
 
     @include screen-md() {
-      height: 1030px;
+      height: 1055px;
     }
     @include screen-sm() {
-      height: 825px;
+      height: 840px;
     }
   }
 

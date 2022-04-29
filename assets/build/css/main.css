@@ -248,7 +248,7 @@ footer, header, nav, section, main {
 @media screen and (max-width: 1028px) {
   .home {
     background-image: url(../img/tablet/bg-home.png), linear-gradient(#DAFFC2, #DAFFC2);
-    background-size: 869px auto, 100% 200px;
+    background-size: 869px auto, 100% 177px;
     background-position: center 20px, center bottom;
     background-repeat: no-repeat;
     height: 1200px;
@@ -282,16 +282,16 @@ footer, header, nav, section, main {
   }
 }
 .home .main {
-  height: 805px;
+  height: 825px;
 }
 @media screen and (max-width: 1028px) {
   .home .main {
-    height: 1030px;
+    height: 1055px;
   }
 }
 @media screen and (max-width: 640px) {
   .home .main {
-    height: 825px;
+    height: 840px;
   }
 }
 .home .content {
@@ -499,8 +499,8 @@ footer, header, nav, section, main {
   color: #1d1d1b;
   display: block;
   margin-top: 25px;
-  margin-left: 45px;
-  margin-right: 20%;
+  margin-left: 40px;
+  margin-right: 70px;
 }
 @media screen and (max-width: 1028px) {
   .download-list .item {
