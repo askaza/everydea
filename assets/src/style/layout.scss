@@ -1,0 +1,204 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: $contatiner_w_min;
+}
+
+.container {
+  margin: 0 auto;
+  width: $contatiner_w;
+
+  @include screen-lg() {
+    padding: 0 $padding_lg;
+    width: 100%;
+  }
+
+  @include screen-md() {
+    padding: 0 $padding_sm;
+    width: 100%;
+  }
+}
+
+.header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  .nav-link {
+    margin-left: 60px;
+    background: $pink;
+    border-radius: 25px;
+    color: $white;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 4px 29px;
+    text-decoration: none;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .logo {
+    background: url(../img/desktop/logo-inside.png) no-repeat;
+    background-size: contain;
+    display: block;
+    height: 72px;
+    text-decoration: none;
+    width: 320px;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    @include screen-sm() {
+      background: url(../img/mobile/logo-inside.png) no-repeat;
+      background-size: contain;
+      height: 112px;
+      width: 168px;
+    }
+  }
+
+  .nav, .social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .social {
+    .item {
+      margin-left: 25px;
+    }
+  }
+}
+
+.main {
+  flex-shrink: 0;
+}
+
+.footer {
+  background: $blue url(../img/desktop/bg-footer.png) no-repeat;
+  background-size: 1378px auto;
+  background-position: 45% 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  .copyright {
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 145px;
+
+    @include screen-md() {
+      padding-top: 70px;
+      padding-bottom: 130px;
+      font-size: 21px;
+      padding-left: 70px;
+    }
+    @include screen-md() {
+      padding-left: 20px;
+    }
+  }
+
+  @include screen-md() {
+    background: #36a4dc url(../img/tablet/bg-footer.png) no-repeat;
+    background-size: 728px auto;
+    background-position: 0 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
+.wave {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    right: 0;
+    top: -34px;
+    height: 34px;
+    background-size: 68px 136px;
+    background-image: radial-gradient(circle at 34px -51px, transparent 68px, $blue 21px);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    right: 0;
+    top: -51px;
+    height: 51px;
+    background-size: 136px 136px;
+    background-image: radial-gradient(circle at 34px 86px, $blue 70px, transparent 21px);
+  }
+
+
+  @include screen-md() {
+    &:before,
+    &:after {
+      left: -10px;
+    }
+  }
+
+}
+
+
+
+
+
+/// icons
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+
+  &.icon-insta-sm {
+    background-image: url(../img/icons/insta-sm.png);
+    height: 51px;
+    width: 51px;
+  }
+  &.icon-youtube-sm {
+    background-image: url(../img/icons/youtube-sm.png);
+    height: 51px;
+    width: 51px;
+  }
+
+  &.icon-insta {
+    background-image: url(../img/icons/insta.png);
+    height: 118px;
+    width: 118px;
+    @include screen-sm() {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  &.icon-youtube {
+    background-image: url(../img/icons/youtube.png);
+    height: 109px;
+    width: 123px;
+
+    @include screen-sm() {
+      height: 74px;
+      width: 83px;
+    }
+  }
+  &.icon-download {
+    background-image: url(../img/icons/download.png);
+    height: 78px;
+    width: 78px;
+  }
+  &.icon-arrow {
+    background-image: url(../img/icons/arrow.png);
+    height: 25px;
+    width: 15px;
+  }
+}

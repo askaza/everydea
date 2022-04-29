@@ -1,0 +1,142 @@
+.download {
+  background: url(../img/desktop/bg-inside.png) no-repeat;
+  background-size: 1808px auto;
+  background-position: center 50px;
+
+    .nav-link {
+      margin-right: 60px;
+    }
+
+  .main {
+    padding-bottom: 120px;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 53px;
+    color: $navy;
+    margin: 30px 0 120px;
+
+    @include screen-md() {
+      font-size: 40px;
+      margin-bottom: 100px;
+    }
+
+    @include screen-sm() {
+      font-size: 30px;
+      margin-bottom: 55px;
+    }
+  }
+
+
+  @include screen-md() {
+      background: url(../img/tablet/bg-inside.png) no-repeat;
+      background-size: 525px auto;
+      background-position: 131% 30px;
+
+
+      .nav-link {
+        display: none;
+      }
+
+      .header {
+        padding-bottom: 10px;
+      }
+    }
+
+  @include screen-sm() {
+    background: none;
+
+    .social {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.download-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .item {
+    border: 11px solid $blue;
+    border-radius: 60px;
+    background-color: $white;
+    height: 275px;
+    margin-bottom: 120px;
+    position: relative;
+    width: 30%;
+
+    a {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      position: relative;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      height: auto;
+      width: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    .download {
+      right: 30px;
+      bottom: -45px;
+      position: absolute;
+    }
+
+    .size {
+      font-size: 16px;
+      font-weight: 700;
+      color: $blue;
+      position: absolute;
+      left: 10px;
+      bottom: -30px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1d1d1b;
+      display: block;
+      margin-top: 25px;
+      margin-left: 45px;
+      margin-right: 20%;
+    }
+
+
+    @include screen-md() {
+      margin-bottom: 95px;
+      height: 220px;
+      width: 46%;
+
+      .download {
+        right: 20px;
+        bottom: -50px;
+        position: absolute;
+      }
+
+      .title {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 100px;
+      }
+    }
+
+    @include screen-sm() {
+      height: 215px;
+      width: 100%;
+
+      .title {
+        font-size: 19px;
+        padding-left: 0;
+      }
+    }
+  }
+}
