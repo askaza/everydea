@@ -7,15 +7,15 @@
   @include screen-md() {
     background-image: url(../img/tablet/bg-home.png), linear-gradient($green, $green);
     background-size: 869px auto, 100% 177px;
-    background-position: center 20px,center bottom;
+    background-position: center 20px,center 996px;
     background-repeat: no-repeat;
     height: 1200px;
   }
 
   @include screen-sm() {
     background: url(../img/mobile/bg-home.png),linear-gradient(#daffc2,#daffc2);
-    background-size: 375px auto,100% 563px;
-    background-position: center 30px,center bottom;
+    background-size: 375px auto,100% 300px;
+    background-position: center 30px,center 638px;
     background-repeat: no-repeat;
   }
 
@@ -39,6 +39,7 @@
   }
 
   .main {
+    position: relative;
     height: 825px;
 
     @include screen-md() {
@@ -52,6 +53,9 @@
   .content {
     display: flex;
     flex-direction: row-reverse;
+    position: absolute;
+    left: 50%;
+    margin-left: -451px;
     padding-top: 330px;
 
     .head {
@@ -60,11 +64,8 @@
 
     .social {
       display: flex;
-      width: 37%;
+      width: 500px;
 
-      @include screen-lg() {
-        width: 44%;
-      }
 
       @include screen-md() {
         margin-top: 55px;
@@ -93,7 +94,7 @@
 
     @include screen-md() {
       padding-top: 385px;
-      padding-left: 20%;
+      margin-left: -190px;
       flex-direction: column;
 
       .head,
@@ -103,9 +104,9 @@
     }
 
     @include screen-sm() {
-      padding-top: 255px;
+      padding-top: 245px;
       flex-direction: column;
-      padding-left: 15%;
+      margin-left: -110px;
     }
   }
 
